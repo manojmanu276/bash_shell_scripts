@@ -3,7 +3,7 @@
 # Define the target filesystem you want to check
 target_fs="jenkins_install.yaml"
 
-# Use the 'df' command to retrieve disk usage information and filter by the target filesystem
+# Use the 'du' command to retrieve disk space information and filter by the target filesystem
 usage_info=$(du -sh "$target_fs")
 
 # Check if the target filesystem exists and display the usage information
